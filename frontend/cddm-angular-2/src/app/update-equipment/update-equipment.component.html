@@ -1,0 +1,54 @@
+<div >
+    <h3>Update Equipment</h3>
+    <form (ngSubmit)="onSubmit()" >
+    <div class="form-group">
+        <label><b>Equipment Name :</b></label>{{equipment.id.equipmentNo}}
+    </div>
+    <div class="form-group">
+        <label><b>Equipment Type :</b></label>{{equipment.id.equipmentType}}
+    </div>
+    <div class="form-group">
+        <label><b>Usage Location :</b></label>{{equipment.id.locationOfUse}}
+    </div>
+    <div class="form-group">
+        <label><b>Plant :</b></label>{{equipment.id.plant}}
+    </div>
+    <div class="form-group">
+        <label><b>Section :</b></label>{{equipment.id.section}}
+    </div>
+    <div class="form-group">
+        <label>Desired Accuracy</label>
+        <input type="text" class="form-control" id="desiredAccuracy" [(ngModel)]="equipment.desiredAccuracy" name="desiredAccuracy">
+    </div>
+    <div class="form-group">
+        <label>Equipment Description</label>
+        <input type="text" class="form-control" id="equipmentDesc" [(ngModel)]="equipment.equipmentDesc" name="equipmentDesc">
+    </div>
+    <div class="form-group">
+        <label>Equipment Frequency</label>
+        <input type="text" class="form-control" id="frequency" [(ngModel)]="equipment.frequency" name="frequency">
+    </div>
+    <div class="form-group">
+        <label>Equipment Status</label>
+        <input type="text" class="form-control" id="status" [(ngModel)]="equipment.status" name="status">
+    </div>
+    <div class="form-group">
+        <label>Intimidation Days</label>
+        <input type="number" class="form-control" id="intimidationDays" [(ngModel)]="equipment.intimitationDays" name="intimidationDays">
+    </div>
+    <div class="form-group">
+        <label>Last Calibration</label>
+        <input type="date" class="form-control" id="lastCalib" [(ngModel)]="equipment.lastCalib" name="lastCalib">
+    </div>
+    <div class="form-group">
+        <label>Equipment Range</label>
+        <input type="text" class="form-control" id="rangeee" [(ngModel)]="equipment.rangeee" name="rangeee">
+    </div>
+    <div class="form-group">
+        <label>Equipment Remarks</label>
+        <input type="text" class="form-control" id="remarks" [(ngModel)]="equipment.remarks" name="remarks">
+    </div>
+    <button class="btn btn-success" type="submit"> SUBMIT</button>
+    
+    </form>
+</div>

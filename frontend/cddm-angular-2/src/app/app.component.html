@@ -1,0 +1,23 @@
+<div>
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a routerLink="/view" routerLinkActive="active" class="nav-link" >Equipment List</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="/add" routerLinkActive="active" class="nav-link" >Add Equipment</a>
+    </li>
+</ul>
+<span class="spacer"></span>
+
+<h3 class="textwhite leftmar">{{title}}</h3>
+
+</nav>
+</div>
+
+<div>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+

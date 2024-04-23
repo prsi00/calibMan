@@ -1,0 +1,26 @@
+<h2>Equipment List</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Equipment Name</th>
+            <th>Plant</th>
+            <th>Last Date</th>
+            <th>Due Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let equipment of equipments" style="margin-top: 20px;">
+        <td>{{equipment.id.equipmentNo}}</td>
+        <td>{{equipment.id.plant}}</td>
+        <td>{{equipment.lastCalib}}</td>
+        <td>{{equipment.dueDate}}</td>
+        <td>
+            <button class="btn btn-warning" (click)="updateEquipment(equipment.id)">Update</button>
+            <button class="btn btn-success" (click)="calibrateEquipment(equipment.id)" style="margin-left: 10px;">Calibrate</button>
+            <button class="btn btn-info" (click)="viewEquipment(equipment.id)" style="margin-left: 10px;">View</button>
+            <button class="btn btn-danger" (click)="deleteEquipment(equipment.id)" style="margin-left: 10px;">Delete</button>
+        </td>
+
+    </tbody>
+</table>
+ 

@@ -1,0 +1,9 @@
+.textwhite{
+    color:white;
+}
+.spacer{
+    flex: 1;
+}
+.leftmar{
+    margin-right: 30px;
+}
